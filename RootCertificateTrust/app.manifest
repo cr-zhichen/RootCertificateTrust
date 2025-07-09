@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+    <!-- 要求 UAC 提权 -->
+    <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+        <security>
+            <requestedPrivileges>
+                <!-- 关键行：requireAdministrator 表示启动时弹 UAC 并需要管理员权限 -->
+                <requestedExecutionLevel level="requireAdministrator" uiAccess="false" />
+            </requestedPrivileges>
+        </security>
+    </trustInfo>
+
+</assembly>
